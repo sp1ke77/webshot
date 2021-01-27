@@ -149,7 +149,6 @@ button:hover {
   flex-direction: column;
 }
 
-
 #footer { 
   border-top: 2px solid #eee;
   height: 5%;
@@ -157,4 +156,5 @@ button:hover {
   position:absolute;
   top: 90%;
   left:0;
+  font-weight: 300;
 }
