@@ -5,13 +5,13 @@
   font-family: "Inter", sans-serif;
   padding: 0;
 }
+
 body {
   background-color: #fff;
   color: #222;
 }
 
 input {
-  padding: 0 10px;
   outline: none;
 }
 
@@ -46,19 +46,22 @@ input {
 
 #submitBtn {
 	display: inline-block;
-	padding: 10px 30px;
-	background: var(--primary-color);
 	color: #222;
 	border-radius: 5px;
-	border: solid #222 1px;
-	margin-top: 25px;
-	opacity: 0.7;
+	border: solid #222 2px;
+  transition: all .15s ease;
+  background: #222;
+  color: #fff;
 }
 
 #submitBtn:hover {
-	transform: scale(0.98);
+  border-radius: 5px;
+  border: solid #222 2px;
+  background: transparent;
+  color: #222;
+  transition: all .15s ease;
+  cursor: pointer;
 }
-
 
 
 #websiteAdress {
@@ -81,24 +84,67 @@ input {
   justify-content: flex-start;
   margin: 0 0 15px 0;
 }
+
 #color_demo {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background: #7108b6;
-  height: 30px;
-  margin: 0 5px;
-}
-.color_cont input {
+  width: 50px;
   height: 40px;
-  width: 400px;
+  border: 2px solid royalblue;
+  border-radius: 5px;
+  background: #222;
+  margin: 0 10px;
+  margin-top: -14px;
+}
+
+#bgColor {
+  height: 40px;
+  width: 340px;
   border-radius: 5px;
   border: 2px solid #222;
   margin: 0 0 15px 0;
   color: #222;
   padding: 0 20px;
 }
+
+/* Loading Screen */
+#section2 {
+  display: none;
+}
+
+#loading {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8%;
+  position: relative;
+  top: 350px;
+}
+
+
+/* Results Screen */
+#section3 {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#resultImg {
+  width: 50%;
+  margin: 10px;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#Download:hover, #TweetButton:hover {
+  color: #fff;
+}
+
+/* Misc */
 button {
   height: 40px;
   width: 400px;
@@ -114,39 +160,6 @@ button:hover {
   cursor: pointer;
   background: #222;
   color: #222;
-}
-
-/* Section 2 */
-#section2 {
-  display: none;
-}
-
-#loading {
-  margin-left: auto;
-  margin-right: auto;
-  width: 15%;
-  position: relative;
-  top: 350px;
-}
-
-
-/* Section 3 */
-#section3 {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
-#resultImg {
-  width: 50%;
-  margin: 10px;
-}
-.cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 #footer { 
