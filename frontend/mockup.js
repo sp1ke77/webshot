@@ -2,7 +2,7 @@ const section1 = document.getElementById("section1");
 const section2 = document.getElementById("section2");
 const section3 = document.getElementById("section3");
 const resultImg = document.getElementById("resultImg");
-const Download = document.getElementById("Download");
+const View = document.getElementById("ViewButton");
 
 const submitBtn = document.getElementById("submitBtn");
 
@@ -21,7 +21,7 @@ const generateMockup = () => {
   section1.style.display = "none";
   section2.style.display = "block";
 
-  Download.addEventListener("click", function () {
+  View.addEventListener("click", function () {
     window.open(mockup);
   });
 };
