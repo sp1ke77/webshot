@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
+
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+input {
+  padding: 0 10px;
+  outline: none;
+}
+
+#section1 h1 {
+	display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.20em;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 60px;
+    color: #2d3748;
+}
+
+#section h3 {
+  color: #2d3748;
+}
+
+#section1 h3 {
+  display: block;
+  font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 75px;
+}
+
+#section1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 100 20px;
+}
+
+#submitBtn {
+	display: inline-block;
+	padding: 10px 30px;
+	background: var(--primary-color);
+	color: #222;
+	border-radius: 5px;
+	border: solid #222 1px;
+	margin-top: 25px;
+	opacity: 0.7;
+}
+
+#submitBtn:hover {
+	transform: scale(0.98);
+}
+
+
+
+#websiteAdress {
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  border: 2px solid #222;
+  margin: 0 0 15px 0;
+  color: #222;
+  padding: 0 20px;
+
+}
+.color_cont {
+  height: 40px;
+  width: 420px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 15px 0;
+}
+#color_demo {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #7108b6;
+  height: 30px;
+  margin: 0 5px;
+}
+.color_cont input {
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  border: 2px solid #222;
+  margin: 0 0 15px 0;
+  color: #222;
+  padding: 0 20px;
+}
+button {
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  background: transparent;
+  border: 2px solid #222;
+  color: #222;
+  cursor: pointer;
+}
+
+button:hover {
+  border: none;
+  cursor: pointer;
+  background: #222;
+  color: #222;
+}
+
+/* Section 2 */
+#section2 {
+  display: none;
+}
+
+#loading {
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  position: relative;
+  top: 350px;
+}
+
+
+/* Section 3 */
+#section3 {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+#resultImg {
+  width: 50%;
+  margin: 10px;
+}
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#footer { 
+  border-top: 2px solid #eee;
+  height: 5%;
+  width:100%;
+  position:absolute;
+  top: 90%;
+  left:0;
+}

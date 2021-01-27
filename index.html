@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>Webshot - Instantly create a mockup for any website</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📷</text></svg>">
+
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+<section class="section1" id="section1">
+  <div class="content">
+    <h1>w📷bshot</h1>
+    <h3>Instantly create a mockup for any website. <br> It's simple, <span id="underline">type in a URL below.</span></h3>
+    <div class="cont">
+      <input type="text" id="websiteAdress" value='google.com'>
+      <div class="color_cont">
+        <div id="color_demo"></div>
+        <input type="text" id="bgColor" value='7108B6'>
+      </div>
+  <button type="submit" id="submitBtn" onclick='generateMockup();changeView()'>🎉 generate mockup</button>
+  </div>
+</section>
+
+
+<div id="section2">
+  <div class="wrapper">
+    <img id="loading" src="https://th.bing.com/th/id/R6c0c32d5ad64b4f73f94a036d9c5114c?rik=wAhvm21QT8bmag&riu=http%3a%2f%2forig04.deviantart.net%2ff4fc%2ff%2f2016%2f021%2f4%2f3%2ffloppy_disk___pixel_edition_by_daltonkeslar1206-d9ospke.gif&ehk=8zfNehonTxWC9ue6399FCc%2f8QhdNyVkP2CgIe45Xe54%3d&risl=&pid=ImgRaw">
+      </div>
+    </div>
+  </div>
+</div>
+<div id="section3">
+  <div class="cont">
+    <h1>Here it is! Download your Mockup!</h1>
+    <img alt="" id='resultImg'>
+    <button id="Download">✨🎈 download mockup</button>
+    </a>
+  </div>
+</div>
+
+<div id="footer" class="flex flex-col p-6 text-center text-gray-500 bg-white">
+  <div id="links" class="my-3 max-w-md mx-auto w-full flex justify-center items-center">
+    <a href="/about" class="pr-5 hover:text-black">about</a>
+    <a href="https://twitter.com/webshot" target="_blank" class="pr-5 hover:text-black">twitter</a>
+    <a href="https://github.com/heybereket/webshot" target="_blank" class="pr-5 hover:text-black">source</a>
+  </div>
+  
+
+
+<script src="./frontend/mockup.js"></script>
+<script src="./frontend/color-input.js"></script>
+</body>
+</html>
