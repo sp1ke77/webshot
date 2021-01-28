@@ -12,7 +12,7 @@
 
 
 
-  <title>Webshot | Instantly create a mockup for any website</title>
+  <title>Webshot | Instantly create a wireframe for any website</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📷</text></svg>">
   <link rel="stylesheet" type="text/css" href="./frontend/home.css" media="screen"/>
 
@@ -25,7 +25,7 @@
 <section class="section1" id="section1">
   <div class="content">
     <h1>w📷bshot</h1>
-    <h3>Instantly create a mockup for any website. <br> It's simple, type in a URL below.</h3>
+    <h3>Instantly create a wireframe for any website. <br> It's simple, type in a URL below.</h3>
     <div class="cont">
       <input type="text" id="websiteAdress" placeholder="Enter URL" autocomplete="off">
       <div class="color_cont">
@@ -41,7 +41,7 @@
         <option value="saab">other</option>
       </select>
 
-  <button type="submit" id="submitBtn" style="margin-bottom: 8px;" onclick='generateMockup();changeView()'>🎉 generate mockup</button>
+  <button type="submit" id="submitBtn" style="margin-bottom: 8px;" onclick='generateWireframe();changeView()'>🎉 generate wireframe</button>
   <p class="text-gray-500" style="font-size: 13px;">* all data collected is anonymous</p>
   </div>
   </div>
@@ -63,8 +63,8 @@
     <h1></h1>
     <img alt="" id='resultImg'>
     <div align="right">
-    <button id="ViewButton">✨ view mockup</button>
-    <button id="DownloadButton">🔥 export mockup</button>
+    <button id="ViewButton">✨ view wireframe</button>
+    <button id="DownloadButton">🔥 export wireframe</button>
   </div>
   <br>
   <div align="right">
@@ -83,7 +83,7 @@
   </div>
   
 
-<script src="./frontend/mockup.js"></script>
+<script src="./frontend/wireframe.js"></script>
 <script src="./frontend/color-input.js"></script>
 <script src="./frontend/enter-function.js"></script>
 <script src="./frontend/tweet-button.js"></script>

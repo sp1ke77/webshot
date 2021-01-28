@@ -7,22 +7,22 @@ const View = document.getElementById("ViewButton");
 const submitBtn = document.getElementById("submitBtn");
 
 
-const generateMockup = () => {
+const generateWireframe = () => {
   const websiteAdress = document.getElementById("websiteAdress").value;
   const bgColor = document.getElementById("bgColor").value;
-  const mockup =
+  const wireframe =
     "https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=" +
     websiteAdress +
     "&color=" +
     bgColor;
-  console.log(mockup);
-  resultImg.src = mockup;
+  console.log(wireframe);
+  resultImg.src = wireframe;
 
   section1.style.display = "none";
   section2.style.display = "block";
 
   View.addEventListener("click", function () {
-    window.open(mockup);
+    window.open(wireframe);
   });
 };
 
