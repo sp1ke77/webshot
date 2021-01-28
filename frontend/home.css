@@ -101,9 +101,9 @@ input {
 #color_demo {
   width: 50px;
   height: 40px;
-  border: 2px solid royalblue;
+  border: 2px solid #222;
   border-radius: 5px;
-  background: #222;
+  background: #fff;
   margin: 0 10px;
   margin-top: -14px;
 }
