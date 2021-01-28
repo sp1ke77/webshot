@@ -9,6 +9,7 @@
 body {
   background-color: #fff;
   color: #222;
+  overflow-y: visible;
 }
 
 input {
@@ -183,10 +184,10 @@ button:hover {
 
 #footer { 
   border-top: 2px solid #eee;
-  height: 5%;
+  
   width:100%;
   position:absolute;
-  top: 90%;
+  bottom: 0;
   left:0;
   font-weight: 300;
 }
