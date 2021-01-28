@@ -68,12 +68,25 @@ input {
   height: 40px;
   width: 400px;
   border-radius: 5px;
-  border: 2px solid #222;
+  border: 2px solid #eee;
   margin: 0 0 15px 0;
   color: #222;
   padding: 0 20px;
 
 }
+
+#select-survey {
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  margin: 0 0 15px 0;
+  color: #222;
+  padding: 0 20px;
+  outline: none;
+}
+
+
 .color_cont {
   height: 40px;
   width: 420px;
@@ -82,7 +95,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 0 0 15px 0;
+ 
 }
 
 #color_demo {
@@ -99,7 +112,7 @@ input {
   height: 40px;
   width: 340px;
   border-radius: 5px;
-  border: 2px solid #222;
+  border: 2px solid #eee;
   margin: 0 0 15px 0;
   color: #222;
   padding: 0 20px;
