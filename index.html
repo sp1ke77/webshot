@@ -30,7 +30,7 @@
       <input type="text" id="websiteAdress" placeholder="Enter URL" autocomplete="off">
       <div class="color_cont">
         <div id="color_demo"></div>
-        <input type="text" id="bgColor" placeholder="Background Color" autocomplete="off">
+        <input type="text" id="bgColor" placeholder="Background Color (hex)" autocomplete="off">
       </div>
 
       <select id="select-survey">
@@ -62,11 +62,14 @@
     <h1></h1>
     <img alt="" id='resultImg'>
     <div align="right">
-    <button id="ViewButton">✨🎈 view mockup</button>
-    <button id="TweetButton" onclick="Tweet()">🐦 tweet</button>
+    <button id="ViewButton">✨ view mockup</button>
+    <button id="DownloadButton">🔥 download mockup</button>
   </div>
   <br>
-  <button id="DownloadButton">🔥😎 download mockup</button>
+  <div align="right">
+    <button id="VisitSiteButton" onclick="VisitSite()">💨 visit site</button>
+    <button id="TweetButton" onclick="Tweet()">🐦 tweet</button>
+  </div>
 
     </a>
   </div>
@@ -74,7 +77,6 @@
 
 <div id="footer" class="flex flex-col p-6 text-center text-black bg-white">
   <div id="links" class="my-3 max-w-md mx-auto w-full flex justify-center items-center">
-    <a href="help" class="pr-5 hover:text-gray-700">help</a>
     <a href="https://twitter.com/trywebshot" target="_blank" class="pr-5 hover:text-gray-700">twitter</a>
     <a href="https://github.com/heybereket/webshot" target="_blank" class="pr-5 hover:text-gray-700">source</a>
   </div>
@@ -85,5 +87,6 @@
 <script src="./frontend/enter-function.js"></script>
 <script src="./frontend/tweet-button.js"></script>
 <script src="./frontend/download-button.js"></script>
+<script src="./frontend/visit-site-button.js"></script>
 </body>
 </html>

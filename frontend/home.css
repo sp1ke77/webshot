@@ -154,7 +154,7 @@ input {
   flex-direction: column;
 }
 
-#ViewButton:hover, #TweetButton:hover, #DownloadButton:hover {
+#ViewButton:hover, #TweetButton:hover, #DownloadButton:hover, #VisitSiteButton:hover {
   color: #fff;
 }
 

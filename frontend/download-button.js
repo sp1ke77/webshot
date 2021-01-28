@@ -15,4 +15,4 @@ const capture = () => {
   };
   
   const download = document.getElementById('DownloadButton');
-  download.addEventListener('click', capture)
+  download.addEventListener('click', capture);
