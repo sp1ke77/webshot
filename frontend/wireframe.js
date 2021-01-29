@@ -6,7 +6,6 @@ const View = document.getElementById("ViewButton");
 
 const submitBtn = document.getElementById("submitBtn");
 
-
 const generateWireframe = () => {
   const websiteAdress = document.getElementById("websiteAdress").value;
   const bgColor = document.getElementById("bgColor").value;
@@ -15,7 +14,6 @@ const generateWireframe = () => {
     websiteAdress +
     "&color=" +
     bgColor;
-  console.log(wireframe);
   resultImg.src = wireframe;
 
   section1.style.display = "none";
@@ -25,6 +23,24 @@ const generateWireframe = () => {
     window.open(wireframe);
   });
 };
+
+function PDF(){
+  var doc = new jsPDF();
+
+  var imgData = 'data:image/png;base64,'+
+  Base64.encode(resultImg)
+doc.text(20, 20, 'Visit CodexWorld.com');
+doc.addImage(imgData,'PNG', 15, 40, 180, 160)
+
+// Add new page
+doc.addPage();
+doc.text(20, 20, 'Visit CodexWorld.com');
+doc.addImage(imgData,'PNG', 15, 40, 180, 160)
+
+// Save the PDF
+doc.save('document.pdf');
+ }	 
+
 
 const changeView = () => {
   setTimeout(() => {

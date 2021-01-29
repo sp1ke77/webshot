@@ -22,6 +22,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
   <script defer src="https://feedback.fish/ff.js?pid=afcd6253d9d268"></script>
   <script src="https://cdn.jsdelivr.net/g/filesaver.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="	https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Base64/1.1.0/base64.js"></script>
 </head>
 
 <body>
@@ -38,10 +41,10 @@
 
       <select id="select-survey">
         <option disabled selected>How are you using WebShot?</option>
-        <option value="volvo">business</option>
-        <option value="saab">personal</option>
-        <option value="saab">prefer not to say</option>
-        <option value="saab">other</option>
+        <option value="business">business</option>
+        <option value="personal">personal</option>
+        <option value="prefer-not-to-say">prefer not to say</option>
+        <option value="other">other</option>
       </select>
 
   <button type="submit" id="submitBtn" style="margin-bottom: 8px;" onclick='generateWireframe();changeView()'>🎉 generate wireframe</button>
@@ -49,6 +52,8 @@
   </div>
   </div>
 </section>
+
+
 
 
 <div id="section2">
@@ -65,6 +70,7 @@
 
     <h1></h1>
     <img alt="" id='resultImg'>
+    <br>
     <div align="right">
     <button id="ViewButton">✨ view wireframe</button>
     <button id="DownloadButton" onclick="capture()">🔥 export wireframe</button>
@@ -74,18 +80,18 @@
     <button id="VisitSiteButton" onclick="location.reload();">💨 generate again</button>
     <button id="TweetButton" onclick="Tweet()">🐦 tweet</button>
   </div>
-
     </a>
   </div>
 </div>
 
+<textarea style="visibility: hidden;" id=t></textarea>
 <div id="footer" class="flex flex-col p-6 text-center text-black bg-white" style="cursor:pointer;">
   <div id="links" class="my-3 max-w-md mx-auto w-full flex justify-center items-center">
     <a data-feedback-fish class="pr-5 hover:text-gray-700">feedback</a>
     <a href="https://twitter.com/trywebshot" target="_blank" class="pr-5 hover:text-gray-700">twitter</a>
     <a href="https://github.com/heybereket/webshot" target="_blank" class="pr-5 hover:text-gray-700">source</a>
   </div>
-  
+ 
 
 <script src="./frontend/wireframe.js"></script>
 <script src="./frontend/color-input.js"></script>
