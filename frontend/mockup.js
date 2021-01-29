@@ -6,21 +6,21 @@ const View = document.getElementById("ViewButton");
 
 const submitBtn = document.getElementById("submitBtn");
 
-const generateWireframe = () => {
+const generatemockup = () => {
   const websiteAdress = document.getElementById("websiteAdress").value;
   const bgColor = document.getElementById("bgColor").value;
-  const wireframe =
+  const mockup =
     "https://2s9e3bif52.execute-api.eu-central-1.amazonaws.com/production/screenshot?url=" +
     websiteAdress +
     "&color=" +
     bgColor;
-  resultImg.src = wireframe;
+  resultImg.src = mockup;
 
   section1.style.display = "none";
   section2.style.display = "block";
 
   View.addEventListener("click", function () {
-    window.open(wireframe);
+    window.open(mockup);
   });
 };
 
